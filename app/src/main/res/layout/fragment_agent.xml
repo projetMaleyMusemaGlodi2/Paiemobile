@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AgentFragment"
+        android:id="@+id/frameLayout5">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp" >
+
+        <LinearLayout
+                android:backgroundTint="@color/startblue"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="vertical"
+                android:background="@drawable/entetebackground"
+        >
+            <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:src="@drawable/ic_person_outline_black_24dp"
+            />
+            <TextView
+                    android:layout_marginTop="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agent"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="21sp"
+            />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_person_black_24dp"
+            />
+            <EditText
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="260dp"
+                    android:layout_height="36dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="16dp"
+                    android:id="@+id/txtagentnomsave1"
+                    android:hint="Entrer le nom complet"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_person_black_24dp"
+            />
+            <EditText
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="260dp"
+                    android:layout_height="36dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="16dp"
+                    android:id="@+id/txtagentadresse1"
+                    android:hint="Entrer le nom complet"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_email_black_24dp"
+            />
+            <EditText
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="260dp"
+                    android:layout_height="36dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="16dp"
+                    android:id="@+id/txtagentcontactsave1"
+                    android:hint="Entrer le contact"
+                    android:inputType="phone"
+            />
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_account_balance_black_24dp"
+            />
+            <EditText
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="260dp"
+                    android:layout_height="36dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="16dp"
+                    android:id="@+id/txtagentusernamesave1"
+                    android:hint="Entrer le nom d'utilisateur"
+
+            />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_no_encryption_black_24dp"
+            />
+
+            <EditText
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="260dp"
+                    android:layout_height="36dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="16dp"
+                    android:id="@+id/txtagentpasswordsave1"
+                    android:hint="Entrer votre mot de passe"
+                    android:inputType="textPassword"
+            />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_group_add_black_24dp"
+            />
+            <EditText
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="260dp"
+                    android:layout_height="36dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="16dp"
+                    android:id="@+id/txtagentniveausave1"
+                    android:hint="Le niveau d'acces"
+
+            />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ENREGISTRER"
+                    android:id="@+id/btn_save_agent1"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

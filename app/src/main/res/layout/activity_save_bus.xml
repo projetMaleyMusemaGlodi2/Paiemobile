@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SaveBusActivity">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+        <ScrollView android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" >
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutB0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="30dp">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/rounded_btn"
+                            android:text="      LES VEHICULES"
+                            android:textColor="#FFFFFF"
+                            android:paddingLeft="25dp"
+                            android:textStyle="bold"
+                            android:inputType="text"
+                            android:textSize="25sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutB1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_below="@+id/relativeLayoutB0"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="30dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_numplaqeIconB"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_filter_1_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_numplaqeIconB"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_numplaqeIconB"
+                            android:background="@color/editTextBG"
+                            android:hint="Numero Plaque"
+                            android:id="@+id/txtbusnumeroplaque"
+                            android:paddingLeft="20dp"
+                            android:inputType="text"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutB2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutB1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_marqueIconB"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_airport_shuttle_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:id="@+id/txtbusmarque"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_marqueIconB"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_marqueIconB"
+                            android:background="@color/editTextBG"
+                            android:hint="Marque Vehicule"
+                            android:inputType="text"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutB3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutB2"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_nompropIconB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_person_black_24dp"
+                            android:tint="@color/white"/>
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_nompropIconB"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_nompropIconB"
+                            android:background="@color/editTextBG"
+                            android:hint="Nom Proprietaire"
+                            android:inputType="text"
+                            android:id="@+id/txtbusnomproprietaire"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutB4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutB3"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_adresspropIconB"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_home_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_adresspropIconB"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_adresspropIconB"
+                            android:background="@color/editTextBG"
+                            android:hint="Adresse Proprietaire"
+                            android:inputType="text"
+                            android:id="@+id/txtbusadresseproprietaire"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutB5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutB4"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_contactpropB"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_contact_phone_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_contactpropB"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_contactpropB"
+                            android:background="@color/editTextBG"
+                            android:hint="Contact Proprietaire"
+                            android:inputType="phone"
+                            android:id="@+id/txtbuscontactproprietaire"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutB6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutB5"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_usernamepropB"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_person_outline_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_usernamepropB"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_usernamepropB"
+                            android:background="@color/editTextBG"
+                            android:hint="Nom d'Utilisateur Proprietaire"
+                            android:inputType="text"
+                            android:id="@+id/txtbususernameproprietaire"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutB7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutB6"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+                    <ImageView
+                            android:id="@+id/imgView_passwordpropB"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_no_encryption_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_passwordpropB"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_passwordpropB"
+                            android:background="@color/editTextBG"
+                            android:hint="Mot de passe Proprietaire"
+                            android:inputType="textPassword"
+                            android:id="@+id/txtbuspasswordproprietaire"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutB8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutB7"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+                    <ImageView
+                            android:id="@+id/imgView_namechauffeurB"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_person_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_namechauffeurB"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_namechauffeurB"
+                            android:background="@color/editTextBG"
+                            android:hint="Nom du Chauffeur"
+                            android:inputType="text"
+                            android:id="@+id/txtbusnomchauffeur"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutB9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutB8"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+                    <ImageView
+                            android:id="@+id/imgView_adressechauffeurB"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_home_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_adressechauffeurB"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_adressechauffeurB"
+                            android:background="@color/editTextBG"
+                            android:hint="Adresse Chauffeur"
+                            android:inputType="text"
+                            android:id="@+id/txtbusadressechauffeur"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutB10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutB9"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+                    <ImageView
+                            android:id="@+id/imgView_contactchauffeurB"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_contact_phone_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_contactchauffeurB"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_contactchauffeurB"
+                            android:background="@color/editTextBG"
+                            android:hint="Contact Chauffeur"
+                            android:inputType="phone"
+                            android:id="@+id/txtbuscontactchauffeur"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutB11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutB10"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+                    <ImageView
+                            android:id="@+id/imgView_usernamechauffeurB"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_person_outline_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_usernamechauffeurB"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_usernamechauffeurB"
+                            android:background="@color/editTextBG"
+                            android:hint="Nom d'utlisateur Chauffeur"
+                            android:inputType="text"
+                            android:id="@+id/txtbususernamechauffeur"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutA12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutB11"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+                    <ImageView
+                            android:id="@+id/imgView_passwordchauffeurB"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_no_encryption_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_passwordchauffeurB"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_passwordchauffeurB"
+                            android:background="@color/editTextBG"
+                            android:hint="Mot de passe Chauffeur"
+                            android:inputType="textPassword"
+                            android:id="@+id/txtbuspasswordchauffeur"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+
+                </RelativeLayout>
+
+
+
+                <Button
+                        android:id="@+id/btn_bus_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutA12"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/rounded_btn"
+                        android:text="ENREGISTRER"
+                        android:textColor="@color/white" />
+
+                <!--<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_signUp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/transparent"
+                    android:fontFamily="sans-serif"
+                    android:text="Already a member? Login Here"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textSize="13sp" />-->
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

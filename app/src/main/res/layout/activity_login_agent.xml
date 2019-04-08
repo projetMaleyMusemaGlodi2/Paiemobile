@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginAgentActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="378dp"
+                android:layout_height="398dp"
+                android:orientation="vertical"
+                android:paddingTop="56dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Agent"
+                      android:textStyle="bold"
+                      android:textAlignment="center"
+                      android:textSize="25dp"
+                      android:textColor="@color/startblue"
+            />
+            <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="24dp"
+                    android:id="@+id/imgprofilloginagent"
+                    android:layout_gravity="center_horizontal"
+                    android:transitionName="imageTransition"
+                    android:src="@drawable/ic_person_black_24dp"
+            />
+
+            <!-- UserName Label and Text -->
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+            >
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtusernameagent"
+                        android:hint="Enter your username"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Password Label and Text -->
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+            >
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtpasswordagent"
+                        android:hint="@string/enter_pwd"
+                        android:inputType="textPassword"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnlogin"
+                    android:textColor="#FFFFFF"
+                    android:transitionName="btnTransition"
+                    android:background="@drawable/rounded_btn"
+                    android:id="@+id/btnloginagent"
+            />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

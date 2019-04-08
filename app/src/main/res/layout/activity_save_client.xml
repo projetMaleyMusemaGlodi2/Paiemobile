@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SaveClientActivity">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+        <ScrollView android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" >
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayouts1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="30dp">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/save_photo_client_ok"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/profile"
+                            android:padding="8dp"
+                    />
+                    <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/uploadphotoclient"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/ic_add_a_photo_black_24dp"
+                            android:layout_marginBottom="50dp"
+                            android:layout_toEndOf="@+id/save_photo_client_ok"
+                            android:layout_marginStart="0dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayouts2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayouts1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_passwordIcons"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_person_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:id="@+id/txtclientnomsave"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_passwordIcons"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_passwordIcons"
+                            android:background="@color/editTextBG"
+                            android:hint="Nom du client"
+                            android:inputType="text"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayouts3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayouts2"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_repasswordIcons"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_home_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_repasswordIcons"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_repasswordIcons"
+                            android:background="@color/editTextBG"
+                            android:hint="Adresse du client"
+                            android:inputType="text"
+                            android:id="@+id/txtclientaadressesave"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayouts4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayouts3"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_emailIcons"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_contact_phone_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_emailIcons"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_emailIcons"
+                            android:background="@color/editTextBG"
+                            android:hint="Telephone du client"
+                            android:inputType="phone"
+                            android:id="@+id/txtclientcontactsave"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayouts5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayouts4"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_adresss"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_person_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_adresss"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_adresss"
+                            android:background="@color/editTextBG"
+                            android:hint="nom Utilisateur"
+                            android:id="@+id/txtclientusernamesave"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayouts6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayouts5"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_phones"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_no_encryption_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_phones"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_phones"
+                            android:background="@color/editTextBG"
+                            android:hint="Mot de passe"
+                            android:inputType="textPassword"
+                            android:id="@+id/txtclientpasswordsave"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+
+
+
+                <Button
+                        android:id="@+id/btnsaveidentiteclient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayouts6"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/rounded_btn"
+                        android:text="ENREGISTRER"
+                        android:textColor="@color/white" />
+
+                <!--<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_signUp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/transparent"
+                    android:fontFamily="sans-serif"
+                    android:text="Already a member? Login Here"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textSize="13sp" />-->
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

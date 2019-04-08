@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".PaieFragment" android:id="@+id/frameLayout2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#09c6df"
+                android:text="Recharge Comptes"
+                android:layout_marginTop="10dp"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            >
+        <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_attach_money_black_24dp"
+            />
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="260dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+            >
+                <EditText
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="260dp"
+                        android:layout_height="36dp"
+                        android:paddingLeft="20dp"
+                        android:id="@+id/txtmontantsave"
+                        android:hint="Entrer le montant"
+
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_directions_run_black_24dp"
+            />
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="260dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+            >
+                <Spinner
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="260dp"
+                        android:layout_height="36dp"
+                        android:paddingLeft="20dp"
+                        android:id="@+id/txtSpinnerclientpaiesave"
+                        android:hint="Selectionnez le Passager"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_access_time_black_24dp"
+            />
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="260dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+            >
+                <EditText
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="260dp"
+                        android:layout_height="39dp"
+                        android:paddingLeft="20dp"
+                        android:id="@+id/txtclientdatesave"
+                        android:hint="Date paiement"
+                        android:inputType="date"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ENREGISTRER"
+                    android:id="@+id/btnsavepaieclient"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

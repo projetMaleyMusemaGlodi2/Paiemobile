@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".UtilisateurFragment"
+        android:id="@+id/frameLayout7">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+        <ScrollView android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" >
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutA0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="30dp">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/rounded_btn"
+                            android:text="       LES AGENTS"
+                            android:textColor="#FFFFFF"
+                            android:paddingLeft="25dp"
+                            android:textStyle="bold"
+                            android:inputType="text"
+                            android:textSize="25sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutA1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutA0"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="30dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_userIconA"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_person_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_userIconA"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_userIconA"
+                            android:background="@color/editTextBG"
+                            android:hint="Nom de l'Agent"
+                            android:id="@+id/txtagentnomsave"
+                            android:paddingLeft="20dp"
+                            android:inputType="text"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutA2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutA1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_passwordIconA"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_home_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:id="@+id/txtagentadresse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_passwordIconA"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_passwordIconA"
+                            android:background="@color/editTextBG"
+                            android:hint="Adresse de l'Agent"
+                            android:inputType="text"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutA3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutA2"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_repasswordIconA"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_contact_phone_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_repasswordIconA"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_repasswordIconA"
+                            android:background="@color/editTextBG"
+                            android:hint="Entrez le Contact"
+                            android:inputType="phone"
+                            android:id="@+id/txtagentcontactsave"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutA4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutA3"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_emailIconA"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_person_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_emailIconA"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_emailIconA"
+                            android:background="@color/editTextBG"
+                            android:hint="Entrer le Nom d'Utilisateur"
+                            android:inputType="text"
+                            android:id="@+id/txtagentusernamesave"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutA5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutA4"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_adressA"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_no_encryption_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_adressA"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_adressA"
+                            android:background="@color/editTextBG"
+                            android:hint="Le Mot de pass"
+                            android:id="@+id/txtagentpasswordsave"
+                            android:paddingLeft="20dp"
+                            android:inputType="textPassword"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/relativeLayoutA6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutA5"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                    <ImageView
+                            android:id="@+id/imgView_phoneA"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/startblue"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_person_black_24dp"
+                            android:tint="@color/white" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_phoneA"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_phoneA"
+                            android:background="@color/editTextBG"
+                            android:hint="Niveau"
+                            android:inputType="number"
+                            android:id="@+id/txtagentniveausave"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+
+                <Button
+                        android:id="@+id/btn_save_agent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutA6"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/rounded_btn"
+                        android:text="ENREGISTRER"
+                        android:textColor="@color/white" />
+
+                <!--<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_signUp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/transparent"
+                    android:fontFamily="sans-serif"
+                    android:text="Already a member? Login Here"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textSize="13sp" />-->
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

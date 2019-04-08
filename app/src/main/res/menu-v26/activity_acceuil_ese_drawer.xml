@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_paiement"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:iconTint="@color/endblue"
+                android:title="Passagers"/>
+        <item
+                android:id="@+id/nav_chargecompteclient"
+                android:icon="@drawable/ic_account_balance_black_24dp"
+                android:iconTint="@color/startblue"
+                android:title="Chargement Compte"/>
+        <item
+                android:id="@+id/nav_chargecomptebus"
+                android:icon="@drawable/ic_directions_bus_black_24dp"
+                android:iconTint="@color/startblue"
+                android:title="Compte Bus"/>
+        <item
+                android:id="@+id/nav_scanner"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Scanner"
+                android:iconTint="@color/startblue"/>
+
+    </group>
+
+    <item android:title="Parametrages">
+        <menu>
+            <item
+                    android:id="@+id/nav_utilisateur"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:iconTint="@color/startblue"
+                    android:title="Utilisateurs"/>
+            <item
+                    android:id="@+id/nav_prixbus"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:iconTint="@color/startblue"
+                    android:title="Prix Bus"/>
+        </menu>
+    </item>
+
+</menu>
